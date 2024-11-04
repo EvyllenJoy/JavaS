@@ -3,7 +3,7 @@ const resp1 = document.querySelector("h3")
 const resp2 = document.querySelector("h4")
 
 frm.addEventListener("submit", (e) => {
-    const medicamento = frm.inMed
+    const medicamento = frm.inMedicamento
     const preco = Number(frm.inPreco)
 
     const valor = Math.floor(preco)
