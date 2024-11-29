@@ -18,6 +18,6 @@ frm.addEventListener("submit", (e) => {
     resp1.innerText = `${resposta} -------------------------`
     resp2.innerText = `${numConta} Contas(s) - Total R$: ${valorTotal.toFixed(2)}`
     
-    //frm.inDescricao.value = ""
-    //frm.inValor.value = ""
+    frm.inDescricao.value = ""
+    frm.inValor.value = ""
 })
