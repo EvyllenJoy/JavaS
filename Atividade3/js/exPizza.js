@@ -2,12 +2,11 @@ const frm = document.querySelector("form")
 const resp1 = document.querySelector("h3")
 
 frm.addEventListener("submit", (e) => {
+    const numCliente = Number(frm.inCliente.value)
     const valor = Number(frm.inValor.value)
-    const tempo = Number(frm.inTempo.value)
  
-    const tempoUso = Math.ceil(tempo/15)
-    const valorUso = tempoUso*valor
+    const valorCliente = valor / numCliente
 
-    resp1.innerText = `Valor a Pagar R$: ${valorUso}`
+    resp1.innerText = `Valor por Cliente R$: ${valorCliente}`
     e.preventDefault()
 })
